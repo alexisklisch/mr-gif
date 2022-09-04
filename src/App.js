@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import {useEffect, useState} from 'react'
+import { fetchGifs } from './services/getGifs'
+import styles from './App.module.css';
+import { Header } from './Header';
+import { GifContainer } from './GifContainer';
+
 
 function App() {
+  const [gifs, setGifs] = useState([])
+
+  useEffect(() => {
+    fetchGifs('masturbate').then(gifs => setGifs(gifs))
+  },[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.App}>
+      <Header/>
+      <main className='main'>
+        <GifContainer listGifmap={gifs}/>
+      </main>
     </div>
   );
 }
