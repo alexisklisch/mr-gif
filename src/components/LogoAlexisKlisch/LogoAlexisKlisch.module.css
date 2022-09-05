@@ -1,0 +1,9 @@
+.logoAlexisKlisch{
+    display: flex;
+    align-items: center;
+}
+
+.logoAlexisKlisch svg {
+    height: 30px;
+}
+

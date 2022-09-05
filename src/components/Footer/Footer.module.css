@@ -1,0 +1,17 @@
+.footer{
+    align-items: center;
+    background-color: var(--white);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 6vh;
+    width: 100vw;
+    margin-top: 30px;
+    position: fixed;
+}
+
+.linkAlexis{
+    color: inherit;
+    text-decoration: none;
+    height: fit-content;
+}

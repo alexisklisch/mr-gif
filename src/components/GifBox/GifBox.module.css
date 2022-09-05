@@ -1,5 +1,7 @@
 .gifCard{
     align-self: center;
+    border: 1px solid var(--white);
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
 }

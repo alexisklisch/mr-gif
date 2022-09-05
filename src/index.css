@@ -1,6 +1,10 @@
 :root{
   font-size: 62.5%;
   --gradient-1: linear-gradient(162.93deg, #4E505E 0.77%, #50A49F 100%);
+  --blue: #020419;
+  --white: #eeeeee;
+  --yellow-1: #FBC971;
+  --yellow-2: #FCD899;
   --yellow-3: #FDE8C2;
 }
 
