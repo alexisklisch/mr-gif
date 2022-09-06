@@ -1,0 +1,56 @@
+.form{
+    overflow: hidden;
+    display: flex;
+    width: 320px;
+    margin: 0 auto;
+    position: relative
+}
+
+.formSearch{
+    border: 2px solid var(--grey);
+    border-radius: 5px;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-size: 1.2rem;
+    height: 36px;
+    padding: 12px;
+    transition: 0.4s ease-in-out;
+    width: 100%;
+}
+.formSearch:focus{
+    outline: none;
+}
+.formSearch:focus{
+    border:2px solid var(--blue);
+}
+.formSearch::placeholder{
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.searchIcon_container{
+    border-radius: 0 5px 5px 0;
+    background-color: var(--blue);
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width: 42px;
+    position: absolute;
+    right: 0;
+}
+
+.searchIcon_container input{
+    background-color: transparent;
+    border: none;
+    color: wheat;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+
+.searchIcon_container svg{
+    top: 14%;left: 24%;
+    position: absolute;
+    width: 54%;
+}

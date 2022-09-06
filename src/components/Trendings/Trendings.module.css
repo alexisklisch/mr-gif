@@ -1,0 +1,18 @@
+.linksContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.linksContainer a{
+    color: var(--blue);
+    font-size: 2.4rem;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.linksContainer a:hover{
+    color: var(--white);
+}
