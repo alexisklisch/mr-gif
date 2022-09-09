@@ -1,4 +1,4 @@
-import {Link, Route} from 'wouter'
+import { Link } from 'wouter'
 import { Logo } from '../Logo'
 import styles from './Header.module.css'
 

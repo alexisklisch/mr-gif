@@ -1,4 +1,4 @@
-import {Link, Route} from 'wouter'
+import { Route } from 'wouter'
 import styles from './App.module.css';
 import { Header } from './components/Header';
 import { GifContainer } from './components/GifContainer';
