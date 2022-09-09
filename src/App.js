@@ -2,7 +2,7 @@ import { Route } from 'wouter'
 import styles from './App.module.css';
 import { Header } from './components/Header';
 import { GifContainer } from './components/GifContainer';
-import { GifInformation } from './components/GifInformation';
+import { GifInformation } from './pages/GifInformation';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 
