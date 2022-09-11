@@ -3,10 +3,16 @@ import { fetchGifs } from '../services/getGifs'
 
 export function useGifs ({ keyword }){
     const [gifs, setGifs] = useState([])
+    const [ loading, setLoading ] = useState(false)
 
     useEffect(() => {
-        fetchGifs(keyword).then(gifs => setGifs(gifs))
+        setLoading(true)
+        fetchGifs(keyword)
+            .then(gifs => {
+                setGifs(gifs)
+                setLoading(false)
+            })
     },[keyword])
 
-    return { gifs }
+    return { gifs, loading }
 }

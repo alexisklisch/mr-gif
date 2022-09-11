@@ -3,11 +3,10 @@ import style from './SearchForm.module.css'
 
 
 function SearchForm(){
-    const [ location, setLocation ] = useLocation()
+    const setLocation = useLocation()[1]
     
     function FindValue(e) {
         e.preventDefault()
-        console.log('The current location is: ' + location);
         
         const searchValue = e.target.firstChild.value
         setLocation(`/search/${searchValue}`)
