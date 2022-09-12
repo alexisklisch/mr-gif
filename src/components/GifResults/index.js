@@ -4,7 +4,6 @@ import style from "./GifContainer.module.css"
 
 
 function GifResults({ gifs, loading }){
-
     return(
         <>
             {
