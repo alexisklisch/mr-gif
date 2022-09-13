@@ -10,7 +10,7 @@ function GifResults({ gifs, loading }){
                 loading
                     ? <ReactLoading className="loading" type="cylon" color="#eeeeee" height={660} width={320}/>
                     : <section className={`${style.gifsCardContainer} container-1`}>
-                        {gifs.map(singleGif => <GifBox src={singleGif.url} alt={singleGif.title} id={singleGif.id} title={singleGif.title} key={singleGif.id}/>)}
+                        {gifs.map(singleGif => <GifBox src={singleGif.url} alt={singleGif.title} id={singleGif.id} title={singleGif.title} key={singleGif.url}/>)}
                     </section>
             }
         </>

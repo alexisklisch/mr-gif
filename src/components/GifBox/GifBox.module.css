@@ -2,6 +2,7 @@
     align-self: center;
     border: 1px solid var(--white);
     border-radius: 5px;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
 }
